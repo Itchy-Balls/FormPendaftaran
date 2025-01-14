@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Siswa</title>
+    <style>
+        
+        body, h2, form {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="date"], input[type="radio"], input[type="checkbox"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical; 
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .checkbox-group label, .radio-group label {
+            margin-bottom: 0;
+        }
+
+        .checkbox-group input, .radio-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Biodata Siswa</h2>
+    <form action="#" method="post">
+       
+        
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+       
+
+        
+        <div class="form-group">
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap"></textarea>
+        </div>
+
+       
+        
+            <label for="tempatLahir">Tempat Lahir:</label>
+            <input type="text" id="tempatLahir" name="tempatLahir" placeholder="Masukkan tempat lahir" required>
+       
+
+     
+        
+            <label for="tanggalLahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+
+
+
+        
+            <label for="Jenis Kelamin">Jenis Kelamin:</label><br>
+            <label for="Lakilaki">Laki-laki:
+            <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" label for="lakiLaki"></label><br>
+            <label for="Perempuan">Perempuan:
+            <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" label for="perempuan"></label><br>
+
+
+
+      
+        
+            <label for="hobi">Hobi:</label><br>
+            <label for="rememberMe">Membaca:
+          <input type="checkbox" id="membaca" name="hobi" value="Membaca"label for="membaca"></label><br>
+          <label for="rememberMe">Traveling:
+            <input type="checkbox" id="traveling" name="hobi" value="Traveling" label for="traveling"></label><br>
+            <label for="rememberMe">Olahraga:
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga" label for="olahraga"></label><br>
+ 
+       
+
+       
+            <label for="kelas">Kelas:</label>
+            <select id="kelas" name="kelas" required>
+                <option value="X PPLG 1">X PPLG 1</option>
+                <option value="X PPLG 2">X PPLG 2</option>
+            </select>
+       
+
+        
+
+        <button type="submit">Login</button>
+
+        <label for="rememberMe">Remember Me:
+        <input type="checkbox" id="rememberMe" name="rememberMe" value="RememberMe" label for="RememberMe"></label><br>
+       
+           
+          
+
+    </form>
+
+</body>
+</html>
